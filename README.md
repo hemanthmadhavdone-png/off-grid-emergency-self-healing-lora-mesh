@@ -1,33 +1,60 @@
-# Firmware Documentation
+# Off-Grid Emergency Messaging Using a Self-Healing ESP32-LoRa Mesh
 
-## Overview
+A four-node wireless communication project exploring off-grid emergency messaging using ESP32 microcontrollers and SX1278 LoRa modules.
 
-This directory contains the common Arduino firmware for the four-node ESP32-LoRa mesh network.
+## Project Overview
 
-## Node Configuration
+This project explores how a self-healing mesh network can support emergency messaging when conventional communication infrastructure is unavailable.
 
-All four ESP32 nodes use the same firmware source file. Each board is assigned a unique node ID.
+The network consists of four ESP32-based nodes communicating over LoRa. The firmware supports the message-handling and forwarding behavior implemented by our team.
 
-- **Node 1:** `NODE_1`
-- **Node 2:** `NODE_2`
-- **Node 3:** `NODE_3`
-- **Node 4:** `NODE_4`
+## Objectives
 
-*Note: These are example IDs. Replace them with the actual IDs used in the firmware.*
+- Build a four-node wireless communication prototype.
+- Implement message forwarding between nodes.
+- Investigate recovery from node or communication-link failures.
+- Evaluate network behavior under different test conditions.
 
-## Upload Instructions
+## Hardware Components
 
-1. Open `mesh_node.ino` in Arduino IDE.
-2. Install the required ESP32 board support and libraries.
-3. Configure the node ID for the board.
-4. Select the correct ESP32 board and serial port.
-5. Upload the firmware.
-6. Repeat for the other three nodes, assigning each a unique ID.
+- ESP32 development boards
+- SX1278 LoRa modules operating at 433 MHz
+- Suitable antennas
+- Breadboards, jumper wires, and power supplies
 
-## Dependencies and Hardware
+## Repository Structure
 
-Document the LoRa library, ESP32 board configuration, pin mappings, frequency settings, and other dependencies used by the actual implementation.
+- `firmware/` — Arduino firmware and configuration documentation
+- `docs/` — Project report and architecture diagrams
+- `tests/` — Test procedures and measured results
 
-## Notes
+## Getting Started
 
-The firmware source is shared across all nodes. Avoid maintaining duplicate copies unless a node genuinely requires different functionality.
+1. Install Arduino IDE and ESP32 board support.
+2. Install the libraries required by the firmware.
+3. Open the Arduino sketch in `firmware/src/`.
+4. Configure the node ID and hardware settings according to the firmware documentation.
+5. Select the appropriate ESP32 board and port, then upload the sketch.
+6. Repeat for each node with a unique ID.
+
+## System Architecture
+
+The system uses four wireless nodes. Add the architecture diagram in `docs/architecture.png` once it is available.
+
+## Testing and Results
+
+Document the experiments performed, including normal message delivery, node failure, recovery behavior, packet delivery, and limitations.
+
+Only report results that were observed during actual testing.
+
+## Project Report
+
+The detailed technical report will be available in `docs/project-report.pdf`.
+
+## Contributors
+
+Add the names and GitHub profiles of all team members here.
+
+## Technologies
+
+ESP32 · LoRa · Arduino IDE · Embedded Systems · Wireless Mesh Networking
