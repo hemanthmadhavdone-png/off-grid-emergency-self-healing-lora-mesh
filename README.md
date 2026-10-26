@@ -6,24 +6,25 @@ This directory contains the common Arduino firmware for the four-node ESP32-LoRa
 
 ## Node Configuration
 
-All four ESP32 nodes use the same firmware source file. Each board is assigned its own node identity using the configuration mechanism implemented in the sketch.
+## Node Configuration
 
-|    Device    | Node identity |
-| ESP32 Node 1 |     NODE_1    |
-| ESP32 Node 2 |     NODE_2    |
-| ESP32 Node 3 |     NODE_3    |
-| ESP32 Node 4 |     NODE_4    |
+All four ESP32 nodes use the same firmware source file. Each board is assigned a unique node ID.
 
-Replace these example identities with the actual IDs used by the firmware.
+- **Node 1:** `NODE_1`
+- **Node 2:** `NODE_2`
+- **Node 3:** `NODE_3`
+- **Node 4:** `NODE_4`
 
-## Upload Procedure
+*Note: These are example IDs. Replace them with the actual IDs used in the firmware.*
 
-1. Open `src/mesh_node.ino` in Arduino IDE.
+## Upload Instructions
+
+1. Open `mesh_node.ino` in Arduino IDE.
 2. Install the required ESP32 board support and libraries.
-3. Configure the appropriate node identity.
+3. Configure the node ID for the board.
 4. Select the correct ESP32 board and serial port.
-5. Upload the sketch to the device.
-6. Repeat for all four nodes, assigning a unique identity to each.
+5. Upload the firmware.
+6. Repeat for the other three nodes, assigning each a unique ID.
 
 ## Dependencies and Hardware
 
