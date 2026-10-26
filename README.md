@@ -6,8 +6,6 @@ This directory contains the common Arduino firmware for the four-node ESP32-LoRa
 
 ## Node Configuration
 
-## Node Configuration
-
 All four ESP32 nodes use the same firmware source file. Each board is assigned a unique node ID.
 
 - **Node 1:** `NODE_1`
