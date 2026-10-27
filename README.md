@@ -56,7 +56,7 @@ This repository documents a working prototype and its development. The project p
 
 Automatic route recovery, end-to-end reliability, and self-healing behavior should be considered demonstrated only to the extent verified through testing.
 
-## 👥 Collaboration
+## 📌 Collaboration
 
 This project was developed collaboratively, combining embedded programming, wireless communication, hardware integration, and system design.
 
