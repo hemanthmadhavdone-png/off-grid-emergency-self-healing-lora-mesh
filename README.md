@@ -6,7 +6,7 @@ During natural disasters, in remote areas, and in emergency situations, conventi
 
 This project explores an **off-grid wireless messaging system using ESP32 microcontrollers and LoRa communication modules**. Multiple nodes communicate wirelessly and forward messages across the network, providing a platform for studying multi-hop communication and resilient messaging without relying on cellular connectivity.
 
-## 🎯 Objectives
+## 📌 Objectives
 
 - Develop a multi-node wireless messaging system using ESP32 and LoRa.
 - Explore communication between nodes without internet or cellular connectivity.
@@ -15,7 +15,7 @@ This project explores an **off-grid wireless messaging system using ESP32 microc
 - Monitor neighboring nodes and investigate communication resilience.
 - Explore the design challenges involved in building a self-healing mesh network.
 
-## ⚙️ Technology Stack
+## 📌 Technology Stack
 
 - **Microcontroller:** ESP32
 - **Wireless communication:** SX1278 LoRa module
@@ -25,7 +25,7 @@ This project explores an **off-grid wireless messaging system using ESP32 microc
 - **User input:** Rotary encoder
 - **Network approach:** Multi-node communication with flood-style message forwarding
 
-## 🏗️ System Architecture
+## 📌 System Architecture
 
 The system consists of multiple ESP32-based nodes equipped with LoRa modules. Each node can participate in wireless communication, and messages can be forwarded through other nodes to extend communication beyond a single direct link.
 
@@ -33,7 +33,7 @@ The architecture is designed to explore multi-hop message delivery, acknowledgem
 
 Refer to the architecture diagram in the `docs/` directory for a visual overview of the system.
 
-## ✨ Key Features
+## 📌 Key Features
 
 - **Off-grid communication:** Wireless messaging without depending on cellular networks or internet access.
 - **Multi-node network:** Communication between multiple ESP32-LoRa devices.
@@ -43,14 +43,14 @@ Refer to the architecture diagram in the `docs/` directory for a visual overview
 - **Node monitoring:** Tracks neighboring nodes to help investigate network availability.
 - **Modular firmware:** A common firmware codebase can be configured with different node IDs.
 
-## 📂 Repository Structure
+## 📌 Repository Structure
 
 - [📄 Read the Project Report](docs/Project_Report_.pdf)
 - [🗺️ View the Network Architecture](docs/network_architecture.png)
 - [💻 Explore the Arduino Firmware](firmware/src/mesh_node.ino).
 
 
-## 🚀 Project Status
+## 📌 Project Status
 
 This repository documents a working prototype and its development. The project provides a practical exploration of embedded systems, LoRa-based wireless communication, and multi-node network design.
 
